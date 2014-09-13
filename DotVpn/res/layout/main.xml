@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <ImageView
+	        android:id="@+id/dotlogo"
+	        android:layout_width="96dp"
+	        android:layout_height="22dp"
+	        android:paddingLeft="10dp"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/logo_mainscreen"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:contentDescription="applicatoin logo"/>
+	
+	    <ImageButton
+	        android:id="@+id/settings"
+	        android:layout_width="45dp"
+	        android:layout_height="45dp"
+	        android:background="#fff"
+	        android:src="@drawable/icon_menu"
+	        android:contentDescription="settings button"
+	        android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp">
+	    
+	    <ImageView
+	        android:id="@+id/bgstatus"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:contentDescription="header background"
+	        android:src="@drawable/status_red_bg"/>
+	
+	    <ImageView
+	        android:id="@+id/dotsconnect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="52dp"
+	        android:src="@drawable/dots_connect_0"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="activity dots"
+	        android:visibility="visible"/>
+	
+	    <ImageButton
+	        android:id="@+id/connect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/connect_button"
+	        android:background="@drawable/empty_button_background"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="on/off button"
+	        android:layout_marginTop="11.5dp"/>
+		
+	    <TextView
+	        android:id="@+id/status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="28dp"
+	        android:textSize="14sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center_vertical"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignParentBottom="true"/>
+		    
+    </RelativeLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+			<!-- public address row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	            
+	            <TextView
+			        android:id="@+id/pal"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/spublicaddress"
+			        android:gravity="left|center_vertical"/>
+	            
+	            <TextView
+			        android:id="@+id/pa"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/unknown"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"/>
+	            
+	        </LinearLayout>
+	        
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- private address row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	            
+	            <TextView
+			        android:id="@+id/prl"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/sprivateaddress"
+			        android:gravity="left|center_vertical"/>
+			
+			    <TextView
+			        android:id="@+id/pr"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/unknown"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"/>
+	            
+	       	</LinearLayout>
+        
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- server location row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	        
+	            <TextView
+			        android:id="@+id/sll"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/sserverlocation"
+			        android:gravity="left|center_vertical"/>
+			
+            	<Spinner
+            	    android:id="@+id/location_select_view" 
+            	    android:layout_width="0dp"
+            	    android:layout_height="40dp"
+            	    android:layout_gravity="center_vertical"
+            	    android:layout_weight="0.5"/>
+	            
+	        </LinearLayout>
+	            
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- ping to server row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	        	
+			    <TextView
+			        android:id="@+id/pil"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/spingserver"
+			        android:gravity="left|center_vertical"/>
+	            
+			    <TextView
+			        android:id="@+id/pi"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/unknown"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"/>
+			    
+			</LinearLayout>
+	              
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- distance to server row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	        	
+	            <TextView
+			        android:id="@+id/dsl"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/sdistanceserver"
+			        android:gravity="left|center_vertical"/>
+			
+			    <TextView
+			        android:id="@+id/ds"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/unknown"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"/>
+	            
+	        </LinearLayout>
+	                  
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- protocol type row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	        	
+	             <TextView
+			        android:id="@+id/ptl"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/sprotocoltype"
+			        android:gravity="left|center_vertical"/>
+			
+			    <TextView
+			        android:id="@+id/pt"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/unknown"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"/>
+	            
+	        </LinearLayout>
+	                     
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#ccc"/>
+	        
+			<!-- firewall row -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal">
+	        	
+	            <TextView
+			        android:id="@+id/fwl"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:layout_marginLeft="10dp"
+			        android:text="@string/sfirewall"
+			        android:gravity="left|center_vertical"/>
+				
+			    <TextView
+			        android:id="@+id/fw"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:textSize="14sp"
+			        android:textColor="#666666"
+			        android:text="@string/inactive"
+			        android:layout_marginLeft="10dp"
+			        android:drawablePadding="5dp"
+			        android:gravity="left|center_vertical"/>
+				
+	        </LinearLayout>
+	            
+	        <com.kernel5.dotvpn.GraphView
+	            android:id="@+id/trafic_view"
+	            android:layout_width="match_parent"
+			    android:layout_height="159dp"/>
+	        
+        </LinearLayout>
+        
+    </ScrollView>
+	
+</LinearLayout>

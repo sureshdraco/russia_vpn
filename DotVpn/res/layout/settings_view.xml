@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+	    <ImageView
+	        android:id="@+id/dotlogo"
+	        android:layout_width="96dp"
+	        android:layout_height="22dp"
+	        android:paddingLeft="10dp"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/logo_mainscreen"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:contentDescription="applicatoin logo"/>
+	
+	    <ImageButton
+	        android:id="@+id/back"
+	        android:layout_width="45dp"
+	        android:layout_height="45dp"
+	        android:background="#fff"
+	        android:src="@drawable/back"
+	        android:layout_alignParentRight="true"
+	        android:onClick="closeActivityAndReturn"
+	        android:contentDescription="back button"/>
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/separator"
+        android:contentDescription="separator line"/>
+
+    <fragment 
+        android:id="@+id/settings_fragment"
+        android:name="com.kernel5.dotvpn.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+</LinearLayout>

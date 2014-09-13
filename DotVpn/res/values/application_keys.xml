@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SettingsKeyAutoConnect">auto_connect</string>
+    <string name="SettingsKeyAccountName">account_name</string>
+    <string name="SettingsKeyServerConfigFileName">server_config_file_name</string>
+    <string name="SettingsKeyServerUrl">server_url</string>
+    
+</resources>

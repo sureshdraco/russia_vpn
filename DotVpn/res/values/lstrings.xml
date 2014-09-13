@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ok" translatable="true">OK</string>
+    <string name="app" translatable="true">SafeIP</string>
+    <string name="connect" translatable="true">Connect</string>
+    <string name="connecting" translatable="true">Connecting...</string>
+    <string name="select" translatable="true">Select</string>
+    <string name="cancel" translatable="true">Cancel</string>
+    <string name="no_data" translatable="true">No Data</string>
+    <string name="auth_username" translatable="true">Username</string>
+    <string name="config_error_found" translatable="true">Error in Configuration</string>
+    <string name="client_no_certificate" translatable="true">No Certificate</string>
+    <string name="route_rejected" translatable="true">Route rejected by Android</string>
+    <string name="location" translatable="true">Location</string>
+    <string name="error" translatable="true">"Error: "</string>
+    <string name="clear" translatable="true">Clear</string>
+    <string name="password" translatable="true">Password</string>
+    <string name="state_connecting" translatable="true">Connecting</string>
+    <string name="converted_profile">imported profile</string>
+    <string name="converted_profile_i">imported profile</string>
+    <string name="state_wait" translatable="true">Waiting for server reply</string>
+    <string name="state_auth" translatable="true">Authenticating</string>
+    <string name="state_get_config" translatable="true">Getting client configuration</string>
+    <string name="state_assign_ip" translatable="true">Assigning IP addresses</string>
+    <string name="state_add_routes" translatable="true">Adding routes</string>
+    <string name="start_vpn_title">Connecting to VPN</string>
+    <string name="state_connected" translatable="true">Connected</string>
+    <string name="state_disconnected" translatable="true">Disconnected</string>
+    <string name="state_reconnecting" translatable="true">Reconnecting</string>
+    <string name="state_exiting" translatable="true">Exiting</string>
+    <string name="state_noprocess" translatable="true">Not running</string>
+    <string name="state_auth_failed" translatable="true">Authentication failed</string>
+    <string name="state_conn_error" translatable="true">Connection error</string>
+    <!-- <string name="state_closed" translatable="true">VPN thread closed</string> -->
+    <string name="notifcation_title_notconnect" translatable="true">Not connected</string>
+    <string name="built_by" translatable="true">built by</string>
+    <string name="debug_build" translatable="true">debug build</string>
+    <string name="official_build" translatable="true">official build</string>
+    <string name="remote_warning" translatable="true">By proceeding, you are giving the application permission to completely control OpenVPN for Android and to intercept all network traffic. <b> Do NOT accept unless you trust the application. </b> Otherwise, you run the risk of having your data compromised by malicious software.</string>
+    <string name="remote_trust" translatable="true">I trust this application.</string>
+    <string name="title_error" translatable="true">Error</string>
+    <string name="upgrade_pro_account" translatable="true">Upgrade to SafeIP Pro to use this location.</string>
+    <string name="current_ip" translatable="true">Current IP</string>
+    <string name="disconnected" translatable="true">Your IP is not protected.</string>
+    <string name="loading" translatable="true">Loading...</string>
+    <string name="action_upgrade" translatable="true">Upgrade</string>
+    <string name="action_logout" translatable="true">Logout</string>
+    <string name="action_verify_ip" translatable="true">Verify IP</string>
+    <string name="action_exit" translatable="true">Exit</string>
+    <string name="prompt_email" translatable="true">Email</string>
+    <string name="action_sign_in" translatable="true">Sign in</string>
+    <string name="action_free_demo" translatable="true">Free Demo</string>
+    <string name="login_progress_signing_in" translatable="true">Signing in...</string>
+    <string name="error_invalid_email" translatable="true">This email address is invalid</string>
+    <string name="error_invalid_password" translatable="true">This password is too short</string>
+    <string name="error_field_required" translatable="true">This field is required</string>
+    <string name="strUpgradeNow" translatable="true">Upgrade Now</string>
+    <string name="strProLogin" translatable="true">Pro Login</string>
+    <string name="title_activity_network_connectivity" translatable="true">Network Connectivity</string>
+    <string name="action_settings" translatable="true">Settings</string>
+    <string name="strWaitingForConnection" translatable="true">Waiting for an Internet connection...</string>
+    <string name="strOpenNetworkSettings" translatable="true">Open Network Settings</string>
+    <string name="serverNotAvail" translatable="true">Location unavailable, please select a different location or upgrade to SafeIP Pro.</string>
+    <string name="serverNotAvailPro" translatable="true">Location unavailable, please select a different location.</string>
+    <string name="free_locations" translatable="true">Free Locations</string>
+    <string name="all_locations" translatable="true">All Locations.</string>
+    <string name="payment_option" translatable="true">Select Payment Option</string>
+    <string name="gp_account" translatable="true">Google Play Account</string>
+    <string name="credit_card" translatable="true">Credit Card or Paypal</string>
+    <string name="phone_sms" translatable="true">Phone or SMS</string>
+    <string name="other_payment" translatable="true">Other Payment Methods</string>
+    <string name="scontinue" translatable="true">Continue</string>
+    <string name="subscription_option" translatable="true">Choose A Subscription Option</string>
+    <string name="one_year" translatable="true">1 Year - $29.95 ($2.49 per month)</string>
+    <string name="three_months" translatable="true">3 Months - $8.95</string>
+    <string name="one_day" translatable="true">1 Day - $0.99</string>
+    <string name="enter_email" translatable="true">Enter your email address</string>
+    <string name="checkout" translatable="true">Checkout</string>
+    <string name="payment_problem" translatable="true">Problem setting up in-app billing: </string>
+    <string name="payment_error" translatable="true">Can not purchase with this Google Play Account. Please update your payment details or try another payment method.</string>
+    <string name="payment_id_error" translatable="true">Error purchasing. Authenticity verification failed.</string>
+    <string name="consume_error" translatable="true">Error while consuming: </string>
+    <string name="inventory_error" translatable="true">Inventory error: </string>
+
+</resources>

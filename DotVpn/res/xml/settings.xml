@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <SwitchPreference 
+        android:key="@string/SettingsKeyAutoConnect" 
+        android:title="@string/auto_connect"
+        android:defaultValue="false"/>
+    <com.kernel5.dotvpn.InformativePreference
+        android:key="@string/SettingsKeyAccountName" 
+        android:title="@string/account" 
+        android:summary="..."/>
+    <Preference android:title="@string/contact_support" android:summary="@string/redirects_you_to_dashboard">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="https://vemeo.com/en/faq"/>
+    </Preference>
+    <Preference android:title="@string/manage_account" android:summary="@string/redirects_you_to_dashboard">
+    	<intent android:action="android.intent.action.VIEW"
+    	    android:data="https://vemeo.com/en/private"/>    
+    </Preference>
+    <com.kernel5.dotvpn.LogoutPreference android:title="@string/logout">
+    	<intent
+    	    android:action="com.kernel5.dotvpn.ACTION_LOGOUT"/>    
+    </com.kernel5.dotvpn.LogoutPreference>
+    <com.kernel5.dotvpn.AppVersionPreference
+        android:title="@string/app_version"/>
+    
+</PreferenceScreen>

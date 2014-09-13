@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SigninLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#61a317"
+    android:padding="5dip">
+
+    <ImageView
+        android:id="@+id/dotlogo"
+        android:src="@drawable/dotlogo"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="application logo"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+		android:imeOptions="actionNext"
+        android:hint="@string/email"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textfield_background"/>
+    	
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="28dp"
+        android:imeOptions="actionDone"
+        android:hint="@string/password"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textfield_background"/>
+	
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:text="@string/forgot"
+        android:layout_marginTop="10dp"
+        android:gravity="right|center_vertical"
+        android:layout_alignEnd="@id/password"
+        android:layout_below="@id/password"/>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="43dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#4e8212"
+        android:text="@string/signin"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"
+        android:layout_alignStart="@id/password"
+        android:layout_alignEnd="@id/password"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:background="#4e8212"
+        android:text="@string/signup"
+        android:gravity="center|center_vertical"
+        android:layout_alignStart="@id/password"
+        android:layout_alignEnd="@id/password"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

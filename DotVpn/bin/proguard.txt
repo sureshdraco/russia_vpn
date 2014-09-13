@@ -1,0 +1,42 @@
+# view res/xml/settings.xml #generated:24
+-keep class com.kernel5.dotvpn.AppVersionPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.kernel5.dotvpn.ConnectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.kernel5.dotvpn.DotVpn { <init>(...); }
+
+# view res/layout/main.xml #generated:326
+-keep class com.kernel5.dotvpn.GraphView { <init>(...); }
+
+# view res/xml/settings.xml #generated:8
+-keep class com.kernel5.dotvpn.InformativePreference { <init>(...); }
+
+# view res/xml/settings.xml #generated:20
+-keep class com.kernel5.dotvpn.LogoutPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.kernel5.dotvpn.OnBootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.kernel5.dotvpn.SettingsActivity { <init>(...); }
+
+# view res/layout/settings_view.xml #generated:43
+-keep class com.kernel5.dotvpn.SettingsFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.kernel5.dotvpn.SigninActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.kernel5.dotvpn.SignupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.kernel5.dotvpn.core.LaunchVPN { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.kernel5.dotvpn.core.OpenVpnService { <init>(...); }
+
+# onClick res/layout/settings_view.xml #generated:25
+-keepclassmembers class * { *** closeActivityAndReturn(...); }
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SignupLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#61a317"
+    android:padding="5dip"
+    >
+
+    <ImageView
+        android:id="@+id/dotlogo"
+        android:background="@drawable/dotlogo"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textColorHint="#ffffff"
+        android:background="#61a317"
+        android:hint="@string/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <ImageView
+        android:id="@+id/first_nameu"
+        android:background="@drawable/underline"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:singleLine="true"
+        android:background="#61a317"
+        android:hint="@string/last_name"
+        android:gravity="left|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <ImageView
+        android:id="@+id/last_nameu"
+        android:background="@drawable/underline"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/email"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textColorHint="#ffffff"
+        android:background="#61a317"
+        android:hint="@string/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <ImageView
+        android:id="@+id/emailu"
+        android:background="@drawable/underline"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/password"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:singleLine="true"
+        android:background="#61a317"
+        android:imeOptions="actionDone"
+        android:hint="@string/password"
+        android:gravity="left|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <ImageView
+        android:id="@+id/passwordu"
+        android:background="@drawable/underline"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/signup"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#617f12"
+        android:text="@string/dosignup"
+        android:gravity="center|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+</RelativeLayout>
