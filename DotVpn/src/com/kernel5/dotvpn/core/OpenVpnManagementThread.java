@@ -494,7 +494,7 @@ public class OpenVpnManagementThread implements Runnable, OpenVPNManagement {
         this.mReleaseHold=false;
 
         if(!this.mWaitingForRelease)
-            managmentCommand("signal SIGUSR1\n");
+            managmentCommand("signal SIGHUP\n");
         else
             // If signalusr1 is called update the state string
             // if there is another for stopping
@@ -502,7 +502,7 @@ public class OpenVpnManagementThread implements Runnable, OpenVPNManagement {
     }
 
     public void reconnect() {
-    	Log.d("suresh", "open mgmnt reconnect");
+    	Log.d(TAG, "open mgmnt reconnect");
         signalusr1();
         releaseHold();
     }
