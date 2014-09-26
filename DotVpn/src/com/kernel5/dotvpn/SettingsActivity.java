@@ -38,7 +38,7 @@ public class SettingsActivity extends Activity {
       // read user preferences
       this.mPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
     		  // this.getApplicationContext().getSharedPreferences(Constants.AppName,MODE_WORLD_READABLE);
-  
+  /*
       // get user infos ( and original ip )
       Runnable mGetUser = new Runnable() {
           @Override
@@ -90,7 +90,7 @@ public class SettingsActivity extends Activity {
       } catch ( Exception e ) {
           Log.v( TAG, "Getting user threadus interruptus", e );
       }
-      
+      */
     }
 
     @Override
