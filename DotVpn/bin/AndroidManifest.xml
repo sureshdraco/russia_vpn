@@ -21,11 +21,11 @@
         android:icon="@drawable/icon"
         android:label="@string/appname"
         android:theme="@style/DotVpnTheme">
-
         <activity
             android:name="com.kernel5.dotvpn.DotVpn"
-            android:launchMode="singleInstance"
-            android:screenOrientation="portrait">
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -48,8 +48,9 @@ public class ConnectActivity extends Activity implements StateListener,
 	private final static boolean DEBUG = false;
 
 	private static final String TAG = Constants.TAG;
-	private static final int UPDATE_PERIOD = 100; // update state period (in ms)
-	private static final int UPDATE_UI_PERIOD = 100; // update UI period (in ms)
+	private static final int UPDATE_PERIOD = 1000; // update state period (in
+													// ms)
+	private static final int UPDATE_UI_PERIOD = 500; // update UI period (in ms)
 	private static final String PA_URL = "http://what-is-my-ip.net/?json";
 	public static final int START_VPN_PROFILE = 70;
 
@@ -91,13 +92,22 @@ public class ConnectActivity extends Activity implements StateListener,
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+
 		// Acquire a reference to the application context
 		this.mContext = this.getApplicationContext();
 
 		// retrieve user preferences
 		this.mPrefs = PreferenceManager
 				.getDefaultSharedPreferences(getBaseContext());
+
+		if (this.mPrefs.getString(Constants.OAUTH_TOKEN, "").equals("")) {
+			// go to connection screen
+			Intent i = new Intent(ConnectActivity.this, DotVpn.class);
+			startActivity(i);
+			finish();
+			return;
+		}
+
 		// retrieve stored values pertinent for the UI
 		this.selected_server_url = this.mPrefs.getString(
 				getString(R.string.SettingsKeyServerUrl),
@@ -178,13 +188,12 @@ public class ConnectActivity extends Activity implements StateListener,
 		this.mHandler = new Handler();
 		this.mHandler.postDelayed(this.mUpdateState, UPDATE_PERIOD);
 		this.mHandler.postDelayed(this.updateUI, UPDATE_UI_PERIOD);
-		OpenVPN.addStateListener(this);
-		OpenVPN.addByteCountListener(this);
-		startService();
 	}
 
 	// show connect screen
 	public void showConnectScreen(boolean force) {
+		setContentView(R.layout.main);
+
 		ImageView sm = (ImageView) findViewById(R.id.settings);
 
 		sm.setOnClickListener(new View.OnClickListener() {
@@ -267,12 +276,11 @@ public class ConnectActivity extends Activity implements StateListener,
 	public void onResume() {
 
 		super.onResume();
-
+		if (this.mPrefs.getString(Constants.OAUTH_TOKEN, "").equals("")) {
+			return;
+		}
 		OpenVPN.addStateListener(this);
 		OpenVPN.addByteCountListener(this);
-	}
-
-	private void startService() {
 		Intent intent = new Intent(this, OpenVpnService.class);
 		intent.setAction(OpenVpnService.START_SERVICE);
 		bindService(intent, this.mConnection, Context.BIND_AUTO_CREATE);
@@ -1061,17 +1069,13 @@ public class ConnectActivity extends Activity implements StateListener,
 
 	@Override
 	public void onPause() {
-
 		OpenVPN.removeStateListener(this);
 		OpenVPN.removeByteCountListener(this);
-
 		super.onPause();
 	}
 
 	protected void stopAndCloseActivity() {
-
 		stopVpnService();
-
 		finish();
 	}
 
@@ -1097,17 +1101,17 @@ public class ConnectActivity extends Activity implements StateListener,
 	/** Called when the activity is destroyed. */
 	@Override
 	public void onDestroy() {
-
-		if (this.mHandler != null) {
-			this.mHandler.removeCallbacks(this.mUpdateState);
-			this.mHandler = null;
+		try {
+			if (this.mHandler != null) {
+				this.mHandler.removeCallbacks(this.mUpdateState);
+				this.mHandler = null;
+			}
+			if (this.mTrafficSource != null) {
+				this.mTrafficSource.close();
+			}
+			unbindService(this.mConnection);
+		} catch (Exception ignored) {
 		}
-		if (this.mTrafficSource != null) {
-			this.mTrafficSource.close();
-		}
-
-		unbindService(this.mConnection);
-
 		super.onDestroy();
 	}
 

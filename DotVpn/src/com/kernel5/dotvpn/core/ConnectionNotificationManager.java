@@ -56,7 +56,7 @@ public class ConnectionNotificationManager {
 				.setOngoing(true)
 				.setContentIntent(
 						PendingIntent.getActivity(context, 0, new Intent(
-								context, DotVpn.class), 0)).setSmallIcon(icon);
+								context, ConnectActivity.class), 0)).setSmallIcon(icon);
 
 		// Because the ID remains unchanged, the existing notification is
 		// updated.
