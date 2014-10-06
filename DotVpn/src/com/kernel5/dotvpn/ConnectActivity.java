@@ -535,8 +535,7 @@ public class ConnectActivity extends Activity implements StateListener,
 								long endTimeMs = startTimeMs;
 
 								try {
-									String GetURL = "https://"
-											+ ConnectActivity.this.selected_server_url;
+									String GetURL = "https://google.com";
 									if (DEBUG)
 										Log.v(TAG, "trying to reach : "
 												+ GetURL);
@@ -955,13 +954,13 @@ public class ConnectActivity extends Activity implements StateListener,
 			@Override
 			public void run() {
 				switch (resid) {
-				case R.string.state_connecting:
 				case R.string.state_wait:
+				case R.string.state_reconnecting:
+				case R.string.state_connecting:
 				case R.string.state_auth:
 				case R.string.state_get_config:
 				case R.string.state_assign_ip:
 				case R.string.state_add_routes:
-				case R.string.state_reconnecting:
 				case R.string.state_tcp_connect:
 				case R.string.state_resolve:
 					ConnectActivity.this.mStatus.setText(getString(
