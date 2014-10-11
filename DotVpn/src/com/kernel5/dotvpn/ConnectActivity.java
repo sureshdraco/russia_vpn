@@ -530,7 +530,8 @@ public class ConnectActivity extends Activity implements StateListener,
 
 					if (OpenVPN.mLastLevel == ConnectionStatus.LEVEL_CONNECTED) {
 						if (ConnectActivity.this.mPublicIp.contains(".")) {
-							if (ConnectActivity.this.mPing == null) {
+							if (ConnectActivity.this.mPing == null || connectedUpdatePing) {
+								connectedUpdatePing = false;
 								long startTimeMs = System.currentTimeMillis();
 								long endTimeMs = startTimeMs;
 
@@ -560,7 +561,7 @@ public class ConnectActivity extends Activity implements StateListener,
 								} finally {
 									endTimeMs = System.currentTimeMillis();
 								}
-
+								Log.d("ping", "ping info : " + (endTimeMs - startTimeMs));
 								ConnectActivity.this.mPing = ((endTimeMs - startTimeMs) > 0) ? ""
 										+ (endTimeMs - startTimeMs)
 										+ " "
@@ -830,6 +831,8 @@ public class ConnectActivity extends Activity implements StateListener,
 		}
 	};
 
+	protected boolean connectedUpdatePing;
+
 	public void startVpnService() {
 		this.mStatus.setText(getString(R.string.sconnecting).toUpperCase());
 		// this.mConnectionPending=true;
@@ -971,7 +974,7 @@ public class ConnectActivity extends Activity implements StateListener,
 							.setVisibility(View.INVISIBLE);
 					break;
 				case R.string.state_connected:
-					// ConnectActivity.this.mConnectionPending=false;
+					ConnectActivity.this.connectedUpdatePing = true;
 					ConnectActivity.this.mStatus.setText(getString(
 							R.string.sconnected).toUpperCase());
 					ConnectActivity.this.is
