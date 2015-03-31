@@ -70,54 +70,56 @@ public final class R {
         public static final int us_flag=0x7f020033;
     }
     public static final class id {
-        public static final int SigninLayout=0x7f080018;
-        public static final int SignupLayout=0x7f08001e;
-        public static final int SplashProgressA=0x7f080025;
-        public static final int SplashProgressB=0x7f080026;
-        public static final int SplashProgressC=0x7f080027;
-        public static final int back=0x7f080016;
-        public static final int bgstatus=0x7f080003;
-        public static final int connect=0x7f080005;
+        public static final int SigninLayout=0x7f080019;
+        public static final int SignupLayout=0x7f08001f;
+        public static final int SplashProgressA=0x7f080026;
+        public static final int SplashProgressB=0x7f080027;
+        public static final int SplashProgressC=0x7f080028;
+        public static final int back=0x7f080017;
+        public static final int bgstatus=0x7f080004;
+        public static final int connect=0x7f080006;
         public static final int country_name=0x7f080000;
-        public static final int dotlogo=0x7f080001;
-        public static final int dotsconnect=0x7f080004;
-        public static final int ds=0x7f080010;
-        public static final int dsl=0x7f08000f;
-        public static final int email=0x7f080019;
-        public static final int emailu=0x7f080023;
-        public static final int first_name=0x7f08001f;
-        public static final int first_nameu=0x7f080020;
-        public static final int forgot=0x7f08001b;
-        public static final int fw=0x7f080014;
-        public static final int fwl=0x7f080013;
-        public static final int last_name=0x7f080021;
-        public static final int last_nameu=0x7f080022;
-        public static final int location_select_view=0x7f08000c;
-        public static final int pa=0x7f080008;
-        public static final int pal=0x7f080007;
-        public static final int password=0x7f08001a;
-        public static final int passwordu=0x7f080024;
-        public static final int pi=0x7f08000e;
-        public static final int pil=0x7f08000d;
-        public static final int pr=0x7f08000a;
-        public static final int prl=0x7f080009;
-        public static final int pt=0x7f080012;
-        public static final int ptl=0x7f080011;
-        public static final int settings=0x7f080002;
-        public static final int settings_fragment=0x7f080017;
-        public static final int signin=0x7f08001c;
-        public static final int signup=0x7f08001d;
-        public static final int sll=0x7f08000b;
-        public static final int status=0x7f080006;
-        public static final int trafic_view=0x7f080015;
+        public static final int dotlogo=0x7f080002;
+        public static final int dotsconnect=0x7f080005;
+        public static final int ds=0x7f080011;
+        public static final int dsl=0x7f080010;
+        public static final int email=0x7f08001a;
+        public static final int emailu=0x7f080024;
+        public static final int first_name=0x7f080020;
+        public static final int first_nameu=0x7f080021;
+        public static final int forgot=0x7f08001c;
+        public static final int fw=0x7f080015;
+        public static final int fwl=0x7f080014;
+        public static final int last_name=0x7f080022;
+        public static final int last_nameu=0x7f080023;
+        public static final int location_select_view=0x7f08000d;
+        public static final int pa=0x7f080009;
+        public static final int pal=0x7f080008;
+        public static final int password=0x7f08001b;
+        public static final int passwordu=0x7f080025;
+        public static final int pi=0x7f08000f;
+        public static final int pil=0x7f08000e;
+        public static final int pr=0x7f08000b;
+        public static final int prl=0x7f08000a;
+        public static final int progressBar=0x7f080001;
+        public static final int pt=0x7f080013;
+        public static final int ptl=0x7f080012;
+        public static final int settings=0x7f080003;
+        public static final int settings_fragment=0x7f080018;
+        public static final int signin=0x7f08001d;
+        public static final int signup=0x7f08001e;
+        public static final int sll=0x7f08000c;
+        public static final int status=0x7f080007;
+        public static final int trafic_view=0x7f080016;
     }
     public static final class layout {
         public static final int country_spinner_layout=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int settings_view=0x7f030002;
-        public static final int signin=0x7f030003;
-        public static final int signup=0x7f030004;
-        public static final int splash=0x7f030005;
+        public static final int empty_progress_fragment=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int settings_view=0x7f030003;
+        public static final int signin=0x7f030004;
+        public static final int signup=0x7f030005;
+        public static final int splash=0x7f030006;
     }
     public static final class string {
         public static final int SettingsKeyAccountName=0x7f050001;
@@ -500,6 +502,7 @@ public final class R {
         /**  Base application theme. 
          */
         public static final int DotVpnTheme=0x7f060000;
+        public static final int TransparentDialog=0x7f060001;
     }
     public static final class xml {
         public static final int settings=0x7f040000;

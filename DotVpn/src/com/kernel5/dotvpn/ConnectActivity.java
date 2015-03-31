@@ -1,44 +1,56 @@
 package com.kernel5.dotvpn;
 
 import android.app.Activity;
-
-import com.kernel5.dotvpn.core.*;
-import com.kernel5.dotvpn.rest.*;
-import com.kernel5.dotvpn.core.OpenVPN.ConnectionStatus;
-import com.kernel5.dotvpn.core.OpenVPN.StateListener;
-import com.kernel5.dotvpn.core.OpenVPN.ByteCountListener;
-import com.kernel5.dotvpn.core.OpenVpnService.LocalBinder;
-import com.kernel5.dotvpn.core.OpenVpnService;
-
+import android.app.Dialog;
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
+import android.net.VpnService;
 import android.os.Bundle;
-import android.content.*;
-import android.os.IBinder;
 import android.os.Handler;
+import android.os.IBinder;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.ImageView;
-import android.graphics.Typeface;
-import android.content.SharedPreferences;
-import android.util.Log;
-import android.net.VpnService;
-import android.widget.AdapterView;
+import android.widget.Toast;
 
-import java.net.NetworkInterface;
-import java.net.InetAddress;
-import java.util.Enumeration;
+import com.kernel5.dotvpn.core.OpenVPN;
+import com.kernel5.dotvpn.core.OpenVPN.ByteCountListener;
+import com.kernel5.dotvpn.core.OpenVPN.ConnectionStatus;
+import com.kernel5.dotvpn.core.OpenVPN.StateListener;
+import com.kernel5.dotvpn.core.OpenVpnService;
+import com.kernel5.dotvpn.core.OpenVpnService.LocalBinder;
+import com.kernel5.dotvpn.core.VPNLaunchHelper;
+import com.kernel5.dotvpn.rest.GetNodeRequest;
+import com.kernel5.dotvpn.rest.GetNodeResponse;
+import com.kernel5.dotvpn.rest.InfoRequest;
+import com.kernel5.dotvpn.rest.InfoResponse;
+import com.kernel5.dotvpn.rest.IpRequest;
+import com.kernel5.dotvpn.rest.IpResponse;
+import com.kernel5.dotvpn.rest.JacksonRequests;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpParams;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
+
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Enumeration;
 
 public class ConnectActivity extends Activity implements StateListener,
 		ByteCountListener, AdapterView.OnItemSelectedListener,
@@ -316,6 +328,19 @@ public class ConnectActivity extends Activity implements StateListener,
 
 	}
 
+	@Override
+	protected Dialog onCreateDialog(int id) {
+		Dialog dialog = null;
+
+		switch (id) {
+		case ActivityProgressIndicator.ACTIVITY_PROGRESS_LOADER:
+			dialog = new ActivityProgressIndicator(this, R.style.TransparentDialog);
+			break;
+		}
+
+		return dialog;
+	}
+
 	// COUNTRY SELECT NOTIFIER //
 
 	@Override
@@ -326,6 +351,7 @@ public class ConnectActivity extends Activity implements StateListener,
 
 		switch (pos) {
 		case 0: // DE
+
 			if (this.selected_server_url.equals(Constants.SERVER_NAME_DE)) {
 				// no change
 				return;
@@ -366,12 +392,9 @@ public class ConnectActivity extends Activity implements StateListener,
 			this.selected_server_config = Constants.VPN_CONFIG_RU;
 			break;
 		case 5: // SE
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_SE)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_SE;
+			getNodeForLocation(pos, country, "se");
 			this.selected_server_config = Constants.VPN_CONFIG_SE;
+
 			break;
 		case 6: // SG
 			if (this.selected_server_url.equals(Constants.SERVER_NAME_SG)) {
@@ -398,34 +421,68 @@ public class ConnectActivity extends Activity implements StateListener,
 			this.selected_server_config = Constants.VPN_CONFIG_US;
 			break;
 		}
+	}
 
-		blockConnectUI();
+	private Runnable getRunnable(final int pos, final String country) {
+		return new Runnable() {
+			@Override
+			public void run() {
+				try {
+					dismissDialog(ActivityProgressIndicator.ACTIVITY_PROGRESS_LOADER);
+				} catch (Exception ignored) {
+				}
+				blockConnectUI();
 
-		// save selected country server parameter to user preferences //
-		SharedPreferences.Editor preferences_editor = this.mPrefs.edit();
-		preferences_editor.putString(getString(R.string.SettingsKeyServerUrl),
-				this.selected_server_url);
-		preferences_editor.putString(
-				getString(R.string.SettingsKeyServerConfigFileName),
-				this.selected_server_config);
-		preferences_editor.commit();
-		// //////////////////////////////////////////////////////////////
+				// save selected country server parameter to user preferences //
+				SharedPreferences.Editor preferences_editor = ConnectActivity.this.mPrefs.edit();
+				preferences_editor.putString(getString(R.string.SettingsKeyServerUrl),
+						ConnectActivity.this.selected_server_url);
+				preferences_editor.putString(
+						getString(R.string.SettingsKeyServerConfigFileName),
+						ConnectActivity.this.selected_server_config);
+				preferences_editor.commit();
+				// //////////////////////////////////////////////////////////////
 
-		if (DEBUG)
-			Log.i(TAG, "Connect to " + country + " (" + pos + ")");
+				if (DEBUG)
+					Log.i(TAG, "Connect to " + country + " (" + pos + ")");
 
-		if (OpenVPN.mLastLevel == ConnectionStatus.LEVEL_CONNECTED) {
-			// reconnect to selected country //
+				if (OpenVPN.mLastLevel == ConnectionStatus.LEVEL_CONNECTED) {
+					// reconnect to selected country //
+					// set reconnect flag
+					ConnectActivity.this.reconnect = true;
+					stopVpnService();
+				} else {
+					// start connection to selected country //
+					startVpnService();
+				}
+			}
+		};
+	}
 
-			// set reconnect flag
-			this.reconnect = true;
-
-			stopVpnService();
-		} else {
-			// start connection to selected country //
-
-			startVpnService();
-		}
+	private void getNodeForLocation(final int pos, final String country, final String location) {
+		showDialog(ActivityProgressIndicator.ACTIVITY_PROGRESS_LOADER);
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					GetNodeRequest request = new GetNodeRequest();
+					request.token = ConnectActivity.this.mPrefs
+							.getString(Constants.OAUTH_TOKEN, "");
+					request.location = location;
+					GetNodeResponse response = JacksonRequests
+							.postForJson(Constants.GET_NODE_URL, request,
+									GetNodeResponse.class);
+					if (response.code == 0) {
+						ConnectActivity.this.selected_server_url = response.node;
+						runOnUiThread(getRunnable(pos, country));
+						Log.d("dotvpn", response.toString());
+					} else {
+						Toast.makeText(getApplicationContext(), "Try Again", Toast.LENGTH_LONG).show();
+					}
+				} catch (Exception e) {
+				}
+			}
+		}).start();
 	}
 
 	@Override

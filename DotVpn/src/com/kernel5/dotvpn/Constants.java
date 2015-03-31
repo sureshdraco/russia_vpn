@@ -8,15 +8,19 @@ public class Constants {
    
 //   public static final String OVPNCONFIGFILE = "android.conf";
    public static final String VPN_CONFIG_DE = "vpn_connect_de.conf";
-   public static final String VPN_CONFIG_FR = "vpn_connect_fr.conf";
-   public static final String VPN_CONFIG_JP = "vpn_connect_jp.conf";
-   public static final String VPN_CONFIG_NL = "vpn_connect_nl.conf";
-   public static final String VPN_CONFIG_RU = "vpn_connect_ru.conf";
-   public static final String VPN_CONFIG_SE = "vpn_connect_se.conf";
-   public static final String VPN_CONFIG_SG = "vpn_connect_sg.conf";
-   public static final String VPN_CONFIG_UK = "vpn_connect_uk.conf";
-   public static final String VPN_CONFIG_US = "vpn_connect_us.conf";
-   
+    public static final String VPN_CONFIG_UK = "vpn_connect_uk.conf";
+    public static final String VPN_CONFIG_US = "vpn_connect_us.conf";
+    public static final String VPN_CONFIG_FR = "vpn_connect_fr.conf";
+    public static final String VPN_CONFIG_RU = "vpn_connect_ru.conf";
+    public static final String VPN_CONFIG_SG = "vpn_connect_sg.conf";
+    public static final String VPN_CONFIG_NL = "vpn_connect_nl.conf";
+    public static final String VPN_CONFIG_JP = "vpn_connect_jp.conf";
+    public static final String VPN_CONFIG_SE = "vpn_connect_se.conf";
+
+    public static final String VPN_CONFIG_CA = "vpn_connect_ca.conf";
+    public static final String VPN_CONFIG_ES = "vpn_connect_es.conf";
+    public static final String VPN_CONFIG_CH = "vpn_connect_ch.conf";
+
 // public static final String SERVER_NAME = "vpn-de.dotvpn.com"; // "46.165.200.70";
    public static final String SERVER_NAME_DE = "vpn-de.dotvpn.com";
    public static final String SERVER_NAME_UK = "vpn-uk.dotvpn.com";
@@ -26,8 +30,12 @@ public class Constants {
    public static final String SERVER_NAME_NL = "vpn-nl.dotvpn.com";
    public static final String SERVER_NAME_RU = "vpn-ru.dotvpn.com";
    public static final String SERVER_NAME_SG = "vpn-sg.dotvpn.com";
-   public static final String SERVER_NAME_SE = "vpn-se.dotvpn.com";
-   
+    public static final String SERVER_NAME_SE = "vpn-se.dotvpn.com";
+
+    public static final String SERVER_NAME_CA = "vpn-ca.dotvpn.com";
+    public static final String SERVER_NAME_ES = "vpn-es.dotvpn.com";
+    public static final String SERVER_NAME_CH = "vpn-ch.dotvpn.com";
+
    public static final String FONT_RR="fonts/Roboto-Regular.ttf";
    public static final String FONT_SO="fonts/OpenSans-Regular.ttf";
    
@@ -46,7 +54,8 @@ public class Constants {
    public static final String SIGNIN_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "signin";
    public static final String SIGNUP_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "signup";
    public static final String INFO_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "info";
-   public static final String IP_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "ip";
+    public static final String IP_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "ip";
+    public static final String GET_NODE_URL = REST_SERVER + PATH_SEPARATOR + API_VERSION + PATH_SEPARATOR + USER_DOMAIN + PATH_SEPARATOR + "get-node";
 
    public static final String OAUTH_TOKEN	=	"oauth_token";
    public static final String BAUTH_TOKEN	=	"bauth_token";

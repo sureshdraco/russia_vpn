@@ -1,25 +1,24 @@
 package com.kernel5.dotvpn.core;
 
 import android.Manifest.permission;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.pm.ApplicationInfo;
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
 import android.net.ConnectivityManager;
 import android.net.VpnService;
-import android.os.*;
+import android.os.Binder;
 import android.os.Handler.Callback;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.ParcelFileDescriptor;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.kernel5.dotvpn.ConnectActivity;
-import com.kernel5.dotvpn.R;
 import com.kernel5.dotvpn.Constants;
+import com.kernel5.dotvpn.R;
 import com.kernel5.dotvpn.TrafficSource;
 import com.kernel5.dotvpn.VpnProfile;
 import com.kernel5.dotvpn.core.OpenVPN.ByteCountListener;
@@ -30,7 +29,8 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Vector;
 
-import static com.kernel5.dotvpn.core.OpenVPN.ConnectionStatus.*;
+import static com.kernel5.dotvpn.core.OpenVPN.ConnectionStatus.LEVEL_CONNECTED;
+import static com.kernel5.dotvpn.core.OpenVPN.ConnectionStatus.LEVEL_WAITING_FOR_USER_INPUT;
 
 public class OpenVpnService extends VpnService implements StateListener,
 		Callback, ByteCountListener {
