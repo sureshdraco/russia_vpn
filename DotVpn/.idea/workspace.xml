@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="get-nod" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3928ee-db53-4a3e-9764-9c3c10beb735" name="Default" comment="" />
@@ -31,155 +31,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConnectActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/ConnectActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6980" max-vertical-offset="18445">
-              <caret line="472" column="56" selection-start-line="472" selection-start-column="56" selection-end-line="472" selection-end-column="56" />
-              <folding>
-                <element signature="e#4268#4308#0" expanded="true" />
-                <element signature="e#4400#4451#0" expanded="true" />
-                <element signature="e#5807#5832#0" expanded="true" />
-                <element signature="e#5843#5882#0" expanded="true" />
-                <element signature="e#5893#5915#0" expanded="true" />
-                <element signature="e#7544#7577#0" expanded="true" />
-                <element signature="e#9643#9679#0" expanded="true" />
-                <element signature="e#9685#9722#0" expanded="true" />
-                <element signature="e#13418#14521#0" expanded="true" />
-                <element signature="e#13804#13844#0" expanded="true" />
-                <element signature="e#13935#13986#0" expanded="true" />
-                <element signature="e#14516#14517#0" expanded="true" />
-                <element signature="e#14701#15415#0" expanded="true" />
-                <element signature="e#15410#15411#0" expanded="true" />
-                <element signature="e#19567#19593#0" expanded="true" />
-                <element signature="e#19606#19633#0" expanded="true" />
-                <element signature="e#19712#19739#0" expanded="true" />
-                <element signature="e#20369#20399#0" expanded="true" />
-                <element signature="e#21751#21767#0" expanded="true" />
-                <element signature="e#21875#21901#0" expanded="true" />
-                <element signature="e#22565#22581#0" expanded="true" />
-                <element signature="e#22684#22700#0" expanded="true" />
-                <element signature="e#22803#22819#0" expanded="true" />
-                <element signature="e#22924#22941#0" expanded="true" />
-                <element signature="e#24204#24240#0" expanded="true" />
-                <element signature="e#24365#24402#0" expanded="true" />
-                <element signature="e#27183#27214#0" expanded="true" />
-                <element signature="e#28391#28416#0" expanded="true" />
-                <element signature="e#28418#28447#0" expanded="true" />
-                <element signature="e#28481#28503#0" expanded="true" />
-                <element signature="e#29102#29129#0" expanded="true" />
-                <element signature="e#30103#30128#0" expanded="true" />
-                <element signature="e#30147#30169#0" expanded="true" />
-                <element signature="e#30399#30418#0" expanded="true" />
-                <element signature="e#30429#30456#0" expanded="true" />
-                <element signature="e#30467#30492#0" expanded="true" />
-                <element signature="e#30503#30522#0" expanded="true" />
-                <element signature="e#30533#30558#0" expanded="true" />
-                <element signature="e#30569#30593#0" expanded="true" />
-                <element signature="e#30604#30629#0" expanded="true" />
-                <element signature="e#30640#30666#0" expanded="true" />
-                <element signature="e#30677#30699#0" expanded="true" />
-                <element signature="e#30743#30782#0" expanded="true" />
-                <element signature="e#30982#31006#0" expanded="true" />
-                <element signature="e#31104#31142#0" expanded="true" />
-                <element signature="e#31439#31465#0" expanded="true" />
-                <element signature="e#31564#31603#0" expanded="true" />
-                <element signature="e#31828#31853#0" expanded="true" />
-                <element signature="e#31952#31990#0" expanded="true" />
-                <element signature="e#32215#32237#0" expanded="true" />
-                <element signature="e#32409#32445#0" expanded="true" />
-                <element signature="e#32875#32899#0" expanded="true" />
-                <element signature="e#33064#33088#0" expanded="true" />
-                <element signature="e#33099#33121#0" expanded="true" />
-                <element signature="e#33220#33261#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="vpn_connect_se.conf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/vpn_connect_se.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49593496" vertical-offset="48" max-vertical-offset="935">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.64608073" vertical-offset="0" max-vertical-offset="935">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="empty_progress_fragment.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/empty_progress_fragment.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="vpn_connect_sg.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_sg.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="289">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VPNLaunchHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/core/VPNLaunchHelper.java">
+      <file leaf-file-name="vpn_connect_uk.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_uk.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1047" max-vertical-offset="1649">
-              <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+            <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityProgressIndicator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/ActivityProgressIndicator.java">
+      <file leaf-file-name="vpn_connect_us.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_us.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state vertical-scroll-proportion="-14.4" vertical-offset="48" max-vertical-offset="935">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="vpn_connect_de.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_de.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.703704" vertical-offset="1594" max-vertical-offset="5797">
-              <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+            <state vertical-scroll-proportion="-26.12" vertical-offset="163" max-vertical-offset="935">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/Constants.java">
+      <file leaf-file-name="vpn_connect_es.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_es.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="879" max-vertical-offset="1292">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+            <state vertical-scroll-proportion="-23.8" vertical-offset="204" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LaunchVPN.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/core/LaunchVPN.java">
+      <file leaf-file-name="vpn_connect_fr.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_fr.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="1802">
-              <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
-              <folding>
-                <element signature="e#3832#3883#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vpn_connect_ca.conf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ca.conf">
+      <file leaf-file-name="vpn_connect_jp.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_jp.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.68" vertical-offset="170" max-vertical-offset="935">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state vertical-scroll-proportion="-22.72" vertical-offset="231" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vpn_connect_nl.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_nl.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vpn_connect_ru.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ru.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.12" vertical-offset="163" max-vertical-offset="935">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -205,6 +151,17 @@
         <option value="$PROJECT_DIR$/src/com/kernel5/dotvpn/core/LaunchVPN.java" />
         <option value="$PROJECT_DIR$/src/com/kernel5/dotvpn/ConnectActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/empty_progress_fragment.xml" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_ca.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_ch.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_de.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_es.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_fr.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_jp.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_nl.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_ru.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_sg.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_uk.conf" />
+        <option value="$PROJECT_DIR$/assets/vpn_connect_us.conf" />
         <option value="$PROJECT_DIR$/assets/vpn_connect_se.conf" />
       </list>
     </option>
@@ -241,6 +198,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -403,7 +361,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,16 +532,14 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32765958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.68191487" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49574468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -598,6 +553,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -621,131 +578,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/spongycastle/util/io/pem/PemGenerationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/VpnProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3910" max-vertical-offset="4318">
-          <caret line="230" column="41" selection-start-line="230" selection-start-column="41" selection-end-line="230" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ca.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="935">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1292">
-          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1666">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/ConnectActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3757" max-vertical-offset="19125">
-          <caret line="221" column="55" selection-start-line="221" selection-start-column="55" selection-end-line="221" selection-end-column="55" />
-          <folding>
-            <element signature="e#4268#4308#0" expanded="true" />
-            <element signature="e#4400#4451#0" expanded="true" />
-            <element signature="e#5807#5832#0" expanded="true" />
-            <element signature="e#5843#5882#0" expanded="true" />
-            <element signature="e#5893#5915#0" expanded="true" />
-            <element signature="e#7544#7577#0" expanded="true" />
-            <element signature="e#9643#9679#0" expanded="true" />
-            <element signature="e#9685#9722#0" expanded="true" />
-            <element signature="e#13418#14521#0" expanded="true" />
-            <element signature="e#13804#13844#0" expanded="true" />
-            <element signature="e#13935#13986#0" expanded="true" />
-            <element signature="e#14516#14517#0" expanded="true" />
-            <element signature="e#14701#15415#0" expanded="true" />
-            <element signature="e#15410#15411#0" expanded="true" />
-            <element signature="e#19567#19593#0" expanded="true" />
-            <element signature="e#19606#19633#0" expanded="true" />
-            <element signature="e#19712#19739#0" expanded="true" />
-            <element signature="e#20369#20399#0" expanded="true" />
-            <element signature="e#21751#21767#0" expanded="true" />
-            <element signature="e#21875#21901#0" expanded="true" />
-            <element signature="e#22565#22581#0" expanded="true" />
-            <element signature="e#22684#22700#0" expanded="true" />
-            <element signature="e#22803#22819#0" expanded="true" />
-            <element signature="e#22924#22941#0" expanded="true" />
-            <element signature="e#24204#24240#0" expanded="true" />
-            <element signature="e#24365#24402#0" expanded="true" />
-            <element signature="e#27183#27214#0" expanded="true" />
-            <element signature="e#28391#28416#0" expanded="true" />
-            <element signature="e#28418#28447#0" expanded="true" />
-            <element signature="e#28481#28503#0" expanded="true" />
-            <element signature="e#29102#29129#0" expanded="true" />
-            <element signature="e#30103#30128#0" expanded="true" />
-            <element signature="e#30147#30169#0" expanded="true" />
-            <element signature="e#30399#30418#0" expanded="true" />
-            <element signature="e#30429#30456#0" expanded="true" />
-            <element signature="e#30467#30492#0" expanded="true" />
-            <element signature="e#30503#30522#0" expanded="true" />
-            <element signature="e#30533#30558#0" expanded="true" />
-            <element signature="e#30569#30593#0" expanded="true" />
-            <element signature="e#30604#30629#0" expanded="true" />
-            <element signature="e#30640#30666#0" expanded="true" />
-            <element signature="e#30677#30699#0" expanded="true" />
-            <element signature="e#30743#30782#0" expanded="true" />
-            <element signature="e#30982#31006#0" expanded="true" />
-            <element signature="e#31104#31142#0" expanded="true" />
-            <element signature="e#31439#31465#0" expanded="true" />
-            <element signature="e#31564#31603#0" expanded="true" />
-            <element signature="e#31828#31853#0" expanded="true" />
-            <element signature="e#31952#31990#0" expanded="true" />
-            <element signature="e#32215#32237#0" expanded="true" />
-            <element signature="e#32409#32445#0" expanded="true" />
-            <element signature="e#32875#32899#0" expanded="true" />
-            <element signature="e#33064#33088#0" expanded="true" />
-            <element signature="e#33099#33121#0" expanded="true" />
-            <element signature="e#33220#33261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/fr_flag.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1054">
-          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/SigninActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="4879">
-          <caret line="228" column="33" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/rest/JacksonRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="3859">
@@ -771,7 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1666">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,63 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="19125">
           <caret line="234" column="68" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="68" />
-          <folding>
-            <element signature="e#4268#4308#0" expanded="true" />
-            <element signature="e#4400#4451#0" expanded="true" />
-            <element signature="e#5807#5832#0" expanded="true" />
-            <element signature="e#5843#5882#0" expanded="true" />
-            <element signature="e#5893#5915#0" expanded="true" />
-            <element signature="e#7544#7577#0" expanded="true" />
-            <element signature="e#9643#9679#0" expanded="true" />
-            <element signature="e#9685#9722#0" expanded="true" />
-            <element signature="e#13418#14521#0" expanded="true" />
-            <element signature="e#13804#13844#0" expanded="true" />
-            <element signature="e#13935#13986#0" expanded="true" />
-            <element signature="e#14516#14517#0" expanded="true" />
-            <element signature="e#14701#15415#0" expanded="true" />
-            <element signature="e#15410#15411#0" expanded="true" />
-            <element signature="e#19567#19593#0" expanded="true" />
-            <element signature="e#19606#19633#0" expanded="true" />
-            <element signature="e#19712#19739#0" expanded="true" />
-            <element signature="e#20369#20399#0" expanded="true" />
-            <element signature="e#21751#21767#0" expanded="true" />
-            <element signature="e#21875#21901#0" expanded="true" />
-            <element signature="e#22565#22581#0" expanded="true" />
-            <element signature="e#22684#22700#0" expanded="true" />
-            <element signature="e#22803#22819#0" expanded="true" />
-            <element signature="e#22924#22941#0" expanded="true" />
-            <element signature="e#24204#24240#0" expanded="true" />
-            <element signature="e#24365#24402#0" expanded="true" />
-            <element signature="e#27183#27214#0" expanded="true" />
-            <element signature="e#28391#28416#0" expanded="true" />
-            <element signature="e#28418#28447#0" expanded="true" />
-            <element signature="e#28481#28503#0" expanded="true" />
-            <element signature="e#29102#29129#0" expanded="true" />
-            <element signature="e#30103#30128#0" expanded="true" />
-            <element signature="e#30147#30169#0" expanded="true" />
-            <element signature="e#30399#30418#0" expanded="true" />
-            <element signature="e#30429#30456#0" expanded="true" />
-            <element signature="e#30467#30492#0" expanded="true" />
-            <element signature="e#30503#30522#0" expanded="true" />
-            <element signature="e#30533#30558#0" expanded="true" />
-            <element signature="e#30569#30593#0" expanded="true" />
-            <element signature="e#30604#30629#0" expanded="true" />
-            <element signature="e#30640#30666#0" expanded="true" />
-            <element signature="e#30677#30699#0" expanded="true" />
-            <element signature="e#30743#30782#0" expanded="true" />
-            <element signature="e#30982#31006#0" expanded="true" />
-            <element signature="e#31104#31142#0" expanded="true" />
-            <element signature="e#31439#31465#0" expanded="true" />
-            <element signature="e#31564#31603#0" expanded="true" />
-            <element signature="e#31828#31853#0" expanded="true" />
-            <element signature="e#31952#31990#0" expanded="true" />
-            <element signature="e#32215#32237#0" expanded="true" />
-            <element signature="e#32409#32445#0" expanded="true" />
-            <element signature="e#32875#32899#0" expanded="true" />
-            <element signature="e#33064#33088#0" expanded="true" />
-            <element signature="e#33099#33121#0" expanded="true" />
-            <element signature="e#33220#33261#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="4879">
           <caret line="228" column="33" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="1666">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3149" max-vertical-offset="4301">
           <caret line="228" column="33" selection-start-line="228" selection-start-column="33" selection-end-line="228" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33222592" vertical-offset="1007" max-vertical-offset="7531">
           <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3910" max-vertical-offset="4318">
           <caret line="230" column="41" selection-start-line="230" selection-start-column="41" selection-end-line="230" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,14 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#290#291#0" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#387#388#0" expanded="false" />
-            <element signature="e#467#468#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,22 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="8687">
           <caret line="142" column="63" selection-start-line="142" selection-start-column="63" selection-end-line="142" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1913#1921#0" expanded="false" />
-            <element signature="e#2007#2015#0" expanded="false" />
-            <element signature="e#2071#2079#0" expanded="false" />
-            <element signature="e#4981#5021#0" expanded="false" />
-            <element signature="e#7814#7830#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ch.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,19 +772,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2271" max-vertical-offset="2873">
           <caret line="185" column="16" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.703704" vertical-offset="1594" max-vertical-offset="5797">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="5797">
           <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/ActivityProgressIndicator.java">
@@ -1063,19 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ca.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.68" vertical-offset="170" max-vertical-offset="935">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/android-sdk/sources/android-19/android/preference/PreferenceManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5376" max-vertical-offset="13787">
           <caret line="367" column="36" selection-start-line="367" selection-start-column="36" selection-end-line="367" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,9 +813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1177" max-vertical-offset="1802">
           <caret line="115" column="36" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="36" />
-          <folding>
-            <element signature="e#3832#3883#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,19 +829,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/empty_progress_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9259257" vertical-offset="0" max-vertical-offset="289">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/Constants.java">
@@ -1126,80 +853,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kernel5/dotvpn/ConnectActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6980" max-vertical-offset="18445">
-          <caret line="472" column="56" selection-start-line="472" selection-start-column="56" selection-end-line="472" selection-end-column="56" />
-          <folding>
-            <element signature="e#4268#4308#0" expanded="true" />
-            <element signature="e#4400#4451#0" expanded="true" />
-            <element signature="e#5807#5832#0" expanded="true" />
-            <element signature="e#5843#5882#0" expanded="true" />
-            <element signature="e#5893#5915#0" expanded="true" />
-            <element signature="e#7544#7577#0" expanded="true" />
-            <element signature="e#9643#9679#0" expanded="true" />
-            <element signature="e#9685#9722#0" expanded="true" />
-            <element signature="e#13418#14521#0" expanded="true" />
-            <element signature="e#13804#13844#0" expanded="true" />
-            <element signature="e#13935#13986#0" expanded="true" />
-            <element signature="e#14516#14517#0" expanded="true" />
-            <element signature="e#14701#15415#0" expanded="true" />
-            <element signature="e#15410#15411#0" expanded="true" />
-            <element signature="e#19567#19593#0" expanded="true" />
-            <element signature="e#19606#19633#0" expanded="true" />
-            <element signature="e#19712#19739#0" expanded="true" />
-            <element signature="e#20369#20399#0" expanded="true" />
-            <element signature="e#21751#21767#0" expanded="true" />
-            <element signature="e#21875#21901#0" expanded="true" />
-            <element signature="e#22565#22581#0" expanded="true" />
-            <element signature="e#22684#22700#0" expanded="true" />
-            <element signature="e#22803#22819#0" expanded="true" />
-            <element signature="e#22924#22941#0" expanded="true" />
-            <element signature="e#24204#24240#0" expanded="true" />
-            <element signature="e#24365#24402#0" expanded="true" />
-            <element signature="e#27183#27214#0" expanded="true" />
-            <element signature="e#28391#28416#0" expanded="true" />
-            <element signature="e#28418#28447#0" expanded="true" />
-            <element signature="e#28481#28503#0" expanded="true" />
-            <element signature="e#29102#29129#0" expanded="true" />
-            <element signature="e#30103#30128#0" expanded="true" />
-            <element signature="e#30147#30169#0" expanded="true" />
-            <element signature="e#30399#30418#0" expanded="true" />
-            <element signature="e#30429#30456#0" expanded="true" />
-            <element signature="e#30467#30492#0" expanded="true" />
-            <element signature="e#30503#30522#0" expanded="true" />
-            <element signature="e#30533#30558#0" expanded="true" />
-            <element signature="e#30569#30593#0" expanded="true" />
-            <element signature="e#30604#30629#0" expanded="true" />
-            <element signature="e#30640#30666#0" expanded="true" />
-            <element signature="e#30677#30699#0" expanded="true" />
-            <element signature="e#30743#30782#0" expanded="true" />
-            <element signature="e#30982#31006#0" expanded="true" />
-            <element signature="e#31104#31142#0" expanded="true" />
-            <element signature="e#31439#31465#0" expanded="true" />
-            <element signature="e#31564#31603#0" expanded="true" />
-            <element signature="e#31828#31853#0" expanded="true" />
-            <element signature="e#31952#31990#0" expanded="true" />
-            <element signature="e#32215#32237#0" expanded="true" />
-            <element signature="e#32409#32445#0" expanded="true" />
-            <element signature="e#32875#32899#0" expanded="true" />
-            <element signature="e#33064#33088#0" expanded="true" />
-            <element signature="e#33099#33121#0" expanded="true" />
-            <element signature="e#33220#33261#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="8908" max-vertical-offset="20094">
+          <caret line="524" column="27" selection-start-line="524" selection-start-column="25" selection-end-line="524" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/android.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.72" vertical-offset="0" max-vertical-offset="935">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ca.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.48" vertical-offset="187" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ch.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.8" vertical-offset="204" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_de.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.12" vertical-offset="163" max-vertical-offset="935">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_es.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.8" vertical-offset="204" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_fr.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_jp.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.72" vertical-offset="231" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_nl.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_ru.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.12" vertical-offset="163" max-vertical-offset="935">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/vpn_connect_sg.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3523316" vertical-offset="0" max-vertical-offset="935">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_uk.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.44" vertical-offset="163" max-vertical-offset="935">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vpn_connect_us.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.4" vertical-offset="48" max-vertical-offset="935">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/vpn_connect_se.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49593496" vertical-offset="48" max-vertical-offset="935">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.64608073" vertical-offset="0" max-vertical-offset="935">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
