@@ -98,6 +98,7 @@ public class ConnectActivity extends Activity implements StateListener,
 
 	/** Flag to reconnect after current connection becomes stopped. */
 	protected boolean reconnect;
+	private String newServerNode;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -351,73 +352,39 @@ public class ConnectActivity extends Activity implements StateListener,
 
 		switch (pos) {
 		case 0: // DE
-
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_DE)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_DE;
+			getNodeForLocation(pos, country, "de");
 			this.selected_server_config = Constants.VPN_CONFIG_DE;
 			break;
 		case 1: // FR
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_FR)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_FR;
+			getNodeForLocation(pos, country, "fr");
 			this.selected_server_config = Constants.VPN_CONFIG_FR;
 			break;
 		case 2: // JP
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_JP)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_JP;
+			getNodeForLocation(pos, country, "jp");
 			this.selected_server_config = Constants.VPN_CONFIG_JP;
 			break;
 		case 3: // NL
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_NL)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_NL;
+			getNodeForLocation(pos, country, "nl");
 			this.selected_server_config = Constants.VPN_CONFIG_NL;
 			break;
 		case 4: // RU
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_RU)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_RU;
+			getNodeForLocation(pos, country, "ru");
 			this.selected_server_config = Constants.VPN_CONFIG_RU;
 			break;
 		case 5: // SE
 			getNodeForLocation(pos, country, "se");
 			this.selected_server_config = Constants.VPN_CONFIG_SE;
-
 			break;
 		case 6: // SG
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_SG)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_SG;
+			getNodeForLocation(pos, country, "sg");
 			this.selected_server_config = Constants.VPN_CONFIG_SG;
 			break;
 		case 7: // UK
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_UK)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_UK;
+			getNodeForLocation(pos, country, "uk");
 			this.selected_server_config = Constants.VPN_CONFIG_UK;
 			break;
 		case 8: // US
-			if (this.selected_server_url.equals(Constants.SERVER_NAME_US)) {
-				// no change
-				return;
-			}
-			this.selected_server_url = Constants.SERVER_NAME_US;
+			getNodeForLocation(pos, country, "us");
 			this.selected_server_config = Constants.VPN_CONFIG_US;
 			break;
 		}
@@ -980,7 +947,7 @@ public class ConnectActivity extends Activity implements StateListener,
 		@Override
 		public void run() {
 			VPNLaunchHelper.startOpenVpn(getBaseContext(),
-					ConnectActivity.this.selected_server_config);
+					ConnectActivity.this.selected_server_config, selected_server_url);
 		}
 	}
 
